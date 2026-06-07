@@ -1,0 +1,45 @@
+{
+  "dataset_rows_raw": 35064,
+  "dataset_rows_hourly": 35064,
+  "train_rows": 34560,
+  "test_rows": 336,
+  "target": "Spain total load actual, hourly",
+  "seasonal_naive_24": {
+    "mae": 1780.547619047619,
+    "rmse": 2451.3539577528327,
+    "mape": 6.695043096221669
+  },
+  "linear_regression": {
+    "mae": 348.82071082092403,
+    "rmse": 452.38429752828597,
+    "mape": 1.2817900324401181,
+    "fit_predict_seconds": 0.015715000045020133
+  },
+  "random_forest": {
+    "mae": 294.87310975335885,
+    "rmse": 390.59826101386,
+    "mape": 1.0882434023148955,
+    "fit_predict_seconds": 50.129262000031304
+  },
+  "statistical_tests": {
+    "random_forest_vs_seasonal_naive_24": {
+      "mean_absolute_error_improvement": 1485.6745092942604,
+      "paired_t_stat": 16.604579187963783,
+      "paired_t_pvalue": 1.3416063892993844e-45,
+      "wilcoxon_stat": 1139.0,
+      "wilcoxon_pvalue": 1.7211797031989044e-52,
+      "bootstrap_ci_95_low": 1328.1098957655227,
+      "bootstrap_ci_95_high": 1668.461169234367
+    },
+    "random_forest_vs_linear_regression": {
+      "mean_absolute_error_improvement": 53.947601067565195,
+      "paired_t_stat": 5.251806312367966,
+      "paired_t_pvalue": 2.682895032708908e-07,
+      "wilcoxon_stat": 19239.0,
+      "wilcoxon_pvalue": 3.590580515544348e-07,
+      "bootstrap_ci_95_low": 33.23832583453729,
+      "bootstrap_ci_95_high": 73.87465391909612
+    }
+  },
+  "total_seconds": 51.9449939999613
+}

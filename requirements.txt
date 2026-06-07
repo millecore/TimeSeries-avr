@@ -1,0 +1,16 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
+statsmodels
+statsforecast
+mlforecast
+pytorch-lightning==2.5.6
+neuralforecast==1.6.0
+torch
+lightgbm
+utilsforecast
+jupyter
+nbformat
